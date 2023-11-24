@@ -1,0 +1,35 @@
+.hero {
+    padding: 64px 0 100px 0;
+    background-image: url(../images/feliz\ aniversario.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .container {
+        position: relative;
+    }
+
+    &__text {
+        font-size: 40px;
+    }
+
+    &__logo {
+        text-align: center;
+        font-family: Moirai One, monospace;
+        font-size: 60px;
+    }
+
+    @media (max-width: 640px) {
+        padding: 40px 0;
+        margin: 23px;
+
+        &__logo {
+            font-size: 40px;
+        }
+
+        &__text {
+            font-size: 22px;
+            margin: 24px 0;
+        }
+    }
+}
