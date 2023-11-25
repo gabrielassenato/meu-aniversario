@@ -1,3 +1,5 @@
+@use 'variables';
+
 .hero {
     padding: 64px 0 150px 0;
     background-image: url(../images/feliz\ aniversario.jpg);
@@ -10,26 +12,38 @@
         position: relative;
     }
 
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color:variables.$secondaryTextColor;
+        content: '';
+        opacity: .2;
+    }
+
     &__text {
-        margin-top: 64px;
+        margin-top: 15px;
         margin-bottom: 64px;
         font-size: 40px;
         line-height: 56px;
         font-weight: 800;
         text-align: center;
+        font-family: Codystar, sans-serif;
     }
 
     &__logo {
         text-align: center;
         font-family: Moirai One, monospace;
-        font-size: 60px;
+        font-size: 68px;
     }
 
     @media (max-width: 640px) {
         padding: 40px 0;
 
         &__logo {
-            font-size: 40px;
+            font-size: 48px;
         }
 
         &__text {

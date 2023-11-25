@@ -8,14 +8,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&family=Moirai+One&family=Roboto:ital,wght@0,700;1,400&family=Sonsie+One&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <h1 class="hero__logo">Vamos comemorar!</h1>
-            <p class="hero__text">O 27<sup>&ordm;</sup> aniversário do Gabriel!</p>
+            <p class="hero__text">
+                27 aniversários do Gabriel em <br><span id="contador"></span>
+            </p>
             <div class="infos-bar">
                 <ul class="infos-bar__infos">
                     <li class="infos-bar__infos__item">
@@ -37,7 +39,43 @@
             </div>
         </div>
     </header>
-
+    <section class="event event--pb event--image-left">
+        <div class="container" data-aos="zoom-in">
+            <div class="event__details">
+                <h2 class="event__details__title">Jantar</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolore dolorem in consequatur, culpa ab eius ullam, vel reiciendis temporibus ratione dolorum similique. Laborum, quae. Porro ex debitis esse nostrum?</p>
+            </div>
+            <img class="event__image" src="images/jantar.jpg" alt="Mesa de jantar">
+        </div>
+    </section>
+    <section class="event event--bp">
+        <div class="container" data-aos="zoom-in-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Parabéns e bolo</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolore dolorem in consequatur, culpa ab eius ullam, vel reiciendis temporibus ratione dolorum similique. Laborum, quae. Porro ex debitis esse nostrum?</p>
+            </div>
+            <img class="event__image" src="images/bolo.jpg" alt="Bolo de aniversário">
+        </div>
+    </section>
+    <section class="event event--pb event--image-left">
+        <div class="container" data-aos="zoom-in-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Brinde ao aniversariante</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolore dolorem in consequatur, culpa ab eius ullam, vel reiciendis temporibus ratione dolorum similique. Laborum, quae. Porro ex debitis esse nostrum?</p>
+            </div>
+            <img class="event__image" src="images/brinde.jpg" alt="Taças brindando">
+        </div>
+    </section>
+    <section class="event event--bp">
+        <div class="container" data-aos="zoom-in-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Exposição de fotos</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolore dolorem in consequatur, culpa ab eius ullam, vel reiciendis temporibus ratione dolorum similique. Laborum, quae. Porro ex debitis esse nostrum?</p>
+            </div>
+            <img class="event__image" src="images/fotografias2.jpg" alt="Fotografias">
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
